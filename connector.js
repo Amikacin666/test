@@ -142,7 +142,7 @@ Zotero.Connector = new function() {
 		var timeout = "timeout" in options ? options.timeout : 15000;
 		var queryString = options.queryString ? ("?" + options.queryString) : "";
 		
-		var uri = Zotero.Prefs.get('connector.url') + "connector/" + method + queryString;
+		var uri = Zotero.Prefs.get('http://127.0.0.1:23119/') + "connector/" + method + queryString;
 		if (headers["Content-Type"] == 'application/json') {
 			data = JSON.stringify(data);
 		}
